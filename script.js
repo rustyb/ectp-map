@@ -1,10 +1,10 @@
 var TileJSONs = [
-    'http://a.tiles.mapbox.com/v3/examples.map-20v6611k,mapbox.dc-property-values.jsonp',
+    'http://a.tiles.mapbox.com/v3/examples.map-20v6611k,rusty.derelict-sites.jsonp',
     'http://a.tiles.mapbox.com/v3/mapbox.dc-building.jsonp',
     'http://a.tiles.mapbox.com/v3/mapbox.dc-construction.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-robbery.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-theft.jsonp',
+    'http://a.tiles.mapbox.com/v3/rusty.derelict-sites.jsonp',
+    'http://a.tiles.mapbox.com/v3/rusty.map-6inoqxrj.jsonp',
+    'http://a.tiles.mapbox.com/v3/rusty.map-6inoqxrj.jsonp',
     'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-auto.jsonp'
 ];
 
@@ -29,11 +29,12 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
     map.disableLayer('robbery');
     map.disableLayer('theft');
     map.disableLayer('auto');
+	map.interaction.auto()
 
     // Set initial latitude, longitude and zoom level
     map.setCenterZoom({
-        lat: 38.90900,
-        lon: -77.01439
+        lat: 53.349,
+        lon: -6.269
     }, 13);
 
     // Set minimum and maximum zoom levels

@@ -98,6 +98,15 @@ body > div {
     width: 100%;
     z-index: 0;
     }
+img { display: inline-block; }
+img,
+object,
+embed { max-width: 100%; height: auto; }
+object,
+embed { height: 100%; }
+img { -ms-interpolation-mode: bicubic; }
+/* Get rid of gap under images by making them display: inline-block; by default */
+img { display: inline-block; }
 
 #branding {
 	position: absolute;
@@ -227,7 +236,7 @@ a.zoomer {
 
 .map-tooltip {
     border:none;
-    background:none;
+    background:#333;
     border-radius:none;
     -moz-border-radius:none;
     -webkit-border-radius:none;
@@ -238,13 +247,15 @@ a.zoomer {
     top: auto;
     right: 10px;
     border: none;
-    color: white;
+    color: #FFF;
     font-size: 11px;
-    width: 200px;
+    width: 300px;
+	min-height:100px;
+	max-height:280px;
     margin-left: -100px;
     line-height: 16px;
     margin-bottom: 20px;
-    overflow: visible;
+    overflow: scroll;
     }
 
 .map-tooltip .inner {
@@ -257,6 +268,9 @@ a.zoomer {
     background: #333;
     z-index: 2;
     text-transform: lowercase;
+	max-width:280px;
+	max-height:280px;
+	overflow: scroll;
     }
     
 .map-tooltip .inner:first-letter {
