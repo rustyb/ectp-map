@@ -269,7 +269,7 @@ a.zoomer {
     z-index: 2;
     text-transform: lowercase;
 	max-width:280px;
-	max-height:280px;
+	max-height:380px;
 	overflow: scroll;
     }
     
