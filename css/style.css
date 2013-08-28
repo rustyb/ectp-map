@@ -310,7 +310,7 @@ a.zoomer {
 .map-legends {
     left: auto;
     right: 10px;
-    height: 125px;
+    height: 85px;
     overflow-x: hidden;
     bottom: 215px;
     font-size: 11px;
