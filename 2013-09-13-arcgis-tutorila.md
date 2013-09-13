@@ -23,3 +23,19 @@ The tutorial provides step by step instructions which can be followed to complet
 In this example we will be using data from Dublin, Ireland on the location of sites which planning applications have been made in the last 10 years. There are a number of files in the download which include a shapefile which identifies the polygons which show the site boundary of the applications and a number of tables which contain attributes relating to the applications - such as date lodged, the decision made, when this decision was made and both short and long descriptions of the proposed developments.
 
 Two light rail lines were built in Dublin in the last 10 years. As a transport planner we would like to know how many applications were granted for change of use and new developments within 500 meteres of the stations (stops) on these new light rail lines.
+
+### Section 1 - Load Planning Data
+- load data
+- join the planning table to the shapefile
+- construct a query that shows only the granted application
+- display these as a different colour
+
+### Section 2
+- Load the Luas stops and alignments
+- explain buffer tool
+create buffers
+use buffers to select only the granted applications within 500m of the stations.
+use buffers to select only the granted applications within 500m of the lines/alignments.
+
+
+
