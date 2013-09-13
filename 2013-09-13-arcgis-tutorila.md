@@ -33,9 +33,10 @@ Two light rail lines were built in Dublin in the last 10 years. As a transport p
 ### Section 2
 - Load the Luas stops and alignments
 - explain buffer tool
-create buffers
-use buffers to select only the granted applications within 500m of the stations.
-use buffers to select only the granted applications within 500m of the lines/alignments.
+- create buffers
+- use buffers to select only the granted applications within 500m of the stations.
+- use buffers to select only the granted applications within 500m of the lines/alignments.
+
 
 
 
